@@ -202,6 +202,7 @@ public class EmailCommands extends AbstractTabExecutor {
     public void sendMessage(@NotNull File file, EmailManager emailManager, Player player, String receiver) {
         if (!file.exists()) {
             player.sendMessage(warning(UltiTools.languageUtils.getString("email_receiver_not_found")));
+            return;
         }
         sendItem(file, emailManager, player, receiver);
     }
@@ -209,6 +210,7 @@ public class EmailCommands extends AbstractTabExecutor {
     public void sendMessage(@NotNull File file, EmailManager emailManager, Player player, String receiver, String message, boolean hasContent) {
         if (!file.exists()) {
             player.sendMessage(warning(UltiTools.languageUtils.getString("email_receiver_not_found")));
+            return;
         }
         if (hasContent) {
             sendItem(file, emailManager, player, receiver, message);

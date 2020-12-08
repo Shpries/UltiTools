@@ -31,6 +31,9 @@ public class FunctionUtils {
         commandMap.put("tpa", "enable_tpa");
         commandMap.put("warp", "enable_wrap");
         commandMap.put("papi", "enable_PAPI");
+        commandMap.put("back", "enable_back");
+        commandMap.put("spawn", "enable_spawn");
+        commandMap.put("auto-reply", "enable_auto-reply");
         commandMap.put("social-system", "enable_social_system");
         commandMap.put("auto-version-check", "enable_version_check");
         commandMap.put("auto-update", "enable_auto_update");
